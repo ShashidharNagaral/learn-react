@@ -22,3 +22,8 @@ To get started with exploring the contents of this repository, you can:
 
 1. Navigate to the `notes/` directory to read through my detailed documentation and notes on different React topics.
 2. Explore the `episodes/` directory to find code samples and projects related to specific lessons or tutorials.
+
+## Resources
+
+- Offical Learn React: https://react.dev/learn
+- HTML to JSX converter: https://transform.tools/html-to-jsx
