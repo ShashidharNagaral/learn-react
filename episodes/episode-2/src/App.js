@@ -1,6 +1,4 @@
 import React from "react";
-
-import React from "react";
 import { createRoot } from "react-dom/client";
 
 // JSX => neither HTML nor javascript language, its absolutely new langauge which has html like syntax.
