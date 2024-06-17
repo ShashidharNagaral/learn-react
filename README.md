@@ -32,4 +32,3 @@ To get started with exploring the contents of this repository, you can:
 
 - [Episode 1: How React Actually Works?](https://github.com/ShashidharNagaral/learn-react/blob/main/notes/episode-1.md)
 - [Episode 2: Create your first react component](https://github.com/ShashidharNagaral/learn-react/blob/main/notes/episode-2.md)
-- [Episode 3: React Hooks from scratch](https://github.com/ShashidharNagaral/learn-react/blob/main/notes/episode-2.md)
