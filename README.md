@@ -27,3 +27,8 @@ To get started with exploring the contents of this repository, you can:
 
 - Offical Learn React: https://react.dev/learn
 - HTML to JSX converter: https://transform.tools/html-to-jsx
+
+## NOTES
+
+- [Episode 1](https://github.com/ShashidharNagaral/learn-react/blob/main/notes/episode-1.md)
+- [Episode 2](https://github.com/ShashidharNagaral/learn-react/blob/main/notes/episode-2.md)

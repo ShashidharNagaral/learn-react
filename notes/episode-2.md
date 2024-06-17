@@ -6,9 +6,10 @@
 
 - React Element is an object, where as React component is a function.
   Below are the different ways to call react component.
-  1. &lt;App/&gt;
-  2. &lt;App&gt;&lt;/App&gt;
-  3. App()
+
+        1. &lt;App/&gt;
+        2. &lt;App&gt;&lt;/App&gt;
+        3. App()
 
 ## API References
 
