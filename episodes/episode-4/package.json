@@ -1,0 +1,22 @@
+{
+  "name": "episode-4",
+  "version": "1.0.0",
+  "description": "This is react episode 4.",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Shashidhar Nagaral",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShashidharNagaral/learn-react"
+  },
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
