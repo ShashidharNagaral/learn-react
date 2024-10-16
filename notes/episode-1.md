@@ -1,73 +1,34 @@
-## NOTES:
+#### Q. What is React? Why React is known as ‘React’?
 
-- Injecting React into HTML template
+    React is a JavaScript Library. The name ‘React’ was chosen
+    because the library was designed to allow developers to react
+    to changes in state and data within an application, and to
+    update the user interface in a declarative and efficient
+    manner.
 
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Learn-React</title>
-        </head>
-        <body>
-            <div id="root">
-            <script
-                crossorigin
-                src="https://unpkg.com/react@18/umd/react.development.js"
-            ></script>
-            <script
-                crossorigin
-                src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-            ></script>
-            <script>
-                const heading = React.createElement("h1", {}, "Learn React!");
-                const root = ReactDOM.createRoot(document.getElementById("root"));
-                root.render(heading);
-            </script>
-            </div>
-        </body>
-        </html>
+#### Q. What is Emmet?
 
-- create element, create root and render into existing HTML default snippet
+    Emmet is the essential toolkit for web-developers. It allows you
+    to type shortcuts that are then expanded into full-fledged boiler plate code for writing HTML and CSS.
 
-        const div = React.createElement("div", {}, [
-            React.createElement("h1", { id: "heading1" }, "Learn React!"),
-            React.createElement("h2", { id: "heading2" }, " - Shashidhar Nagaral"),
-        ]);
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-        root.render(div);
+#### Q. What is crossorigin in script tag?
 
-- [What is React element, exactly?](https://react.dev/reference/react/createElement#what-is-a-react-element-exactly)
+    The crossorigin attribute in the script tag enables CrossOrigin Resource Sharing (CORS) for loading external JavaScript
+    files from different origin than the hosting web page. This
+    allows the script to access resources from the server hosting
+    the script, such as making HTTP requests or accessing data.
 
-  - An element is a lightweight description of a piece of the user interface. For example, both `<Greeting name="Taylor" />` and `createElement(Greeting, { name: 'Taylor' })` produce an object like this:
+#### Q. What is async and defer in script tag? [explanation](https://www.youtube.com/watch?v=IrHmpdORLu8)
 
-        // Slightly simplified
-        {
-            type: Greeting,
-            props: {
-            name: 'Taylor'
-            },
-            key: null,
-            ref: null,
-        }
+Default `<script src="example.js"></script>`
+![alt text](../images/default.png)
 
-  - **Note that creating this object does not render the Greeting component or create any DOM elements.**
+Async `<script src="example.js" async></script>`
+![alt text](../images/async.png)
 
-  - A React element is more like a description—an instruction for React to later render the Greeting component. By returning this object from your App component, you tell React what to do next.
+Defer `<script src="example.js" defer></script>`
+![alt text](../images/defer.png)
 
-  - Creating elements is extremely cheap so you don’t need to try to optimize or avoid it.
+### IMPORTANT NOTES:
 
-- You should only pass children as multiple arguments to createElement if they are all statically known, like createElement('h1', {}, child1, child2, child3). If your children are dynamic, pass the entire array as the third argument: createElement('ul', {}, listItems).
-
-        const h1 = React.createElement("h1", { id: "heading1" }, "Learn React!");
-        const h2 = React.createElement("h2", { id: "heading2" }, " - Shashidhar Nagaral");
-        const div = React.createElement("div", {}, h1, h2);
-
-- Below code will show the warning: `Each child in a list should have a unique “key” prop.`
-
-        const div = React.createElement("div", {}, [ React.createElement("h1", { id: "heading1" }, "Learn React!"),
-        React.createElement("h2", { id: "heading2" }, " - Shashidhar Nagaral"),]);
-
-## API References
-
-- React.createElement: https://react.dev/reference/react/createElement
-- React.createRoot: https://react.dev/reference/react-dom/client/createRoot
+#### 1. React will overwrite everything inside "root" and replaces with whatever given inside render.
