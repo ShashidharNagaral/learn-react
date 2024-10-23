@@ -1,11 +1,21 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "./src/App";
+import { HookPlay } from "./src/HookPlay";
+import { StatePlay } from "./src/StatePlay";
+import { Timer } from "./src/Timer";
 
 const root = createRoot(document.getElementById("root"));
 
 const renderRoot = () => {
-  root.render(<App />);
+  root.render(
+    <div id="index">
+      <StatePlay />
+      <hr className="borderLine" />
+      {/* <HookPlay /> */}
+      {/* <hr className="borderLine" /> */}
+      <Timer />
+    </div>
+  );
 };
 
 renderRoot();
